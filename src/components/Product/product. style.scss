@@ -1,0 +1,51 @@
+.product-page {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
+    &-body {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 3rem;
+    }
+
+    &-carousel,
+    &-detail-wrapper {
+        width: 50%;
+        padding: 1rem;
+        height: max-content;
+
+        img {
+            height: calc(70vh - 48vh);
+            // aspect-ration: 3 / 2;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &-detail-price-wrapper {
+        display: flex;
+    }
+
+    &-detail-title {
+        font-size: 2.5rem;
+    }
+
+    &-detail-price {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    &-detail-discount {
+        border: 1px solid #e32b2b;
+        border-radius: 4px;
+        color: #e32b2b;
+        margin-left: 0.5rem;
+        font-size: 2rem;
+        padding: 0 0.125rem;
+        display: flex;
+        align-items: center;
+    }
+}
+
+    
